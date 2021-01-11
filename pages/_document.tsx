@@ -19,6 +19,10 @@ export default class WahdappDocument extends Document {
           />
           <link
             rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Almarai:400,700,800&display=swap"
+          />
+          <link
+            rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,500,700&display=swap"
           />
           <link

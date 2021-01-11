@@ -6,11 +6,20 @@
   margin: 0;
 }
 
+html {
+  font-family: Sen, sans-serif;
+  &:lang(ar) {
+    font-family: Almarai, sans-serif;
+  }
+  &:lang(tw), &:lang(cn) {
+    font-family: Noto Sans TC, sans-serif;
+  }
+}
+
 body {
   background: #fefafb;
   min-width: fit-content;
   overflow-x: hidden;
-  font-family: Sen, Noto Sans TC;
 }
 
 a {

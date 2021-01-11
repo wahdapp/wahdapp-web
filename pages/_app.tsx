@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import NProgress from 'nprogress';
 import Router from 'next/router';
 import ReactGA from 'react-ga';
-import { appWithTranslation } from 'i18n';
+import { appWithTranslation, i18n } from 'i18n';
 import config from 'react-reveal/globals';
 import 'styles/index.scss';
 
@@ -21,6 +21,11 @@ function MyApp({ Component, pageProps }) {
       ReactGA.pageview(window.location.pathname);
     }
   }, []);
+
+  // dynamically set html lang attribute
+  useEffect(() => {
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
 
   return <Component {...pageProps} />;
 }
