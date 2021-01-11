@@ -1,0 +1,16 @@
+{
+  "NAV": {
+    "DONATE": "Bağış",
+    "FAQ": "SSS",
+    "CONTACT": "İletişim"
+  },
+  "DOWNLOAD_NOW": "Hemen İndir",
+  "FOOTER": {
+    "DOWNLOAD": "İndir",
+    "INFORMATION": "Bilgi",
+    "POLICIES": "Politikalar",
+    "PRIVACY_POLICY": "Gizlilik politikası",
+    "LANGUAGES": "Diller",
+    "SOURCE_CODE": "Kaynak Kodu"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "HEADER": {
+    "TITLE": "En etkili cemaat toplama yolu",
+    "SUBTITLE": "Kolayca yakınındaki cemaati bul"
+  },
+  "BENEFITS": {
+    "TITLE": "Uygulama Özellikleri",
+    "LIST": [
+      {
+        "TITLE": "Cinsiyet Ayrımı",
+        "DESC": "Distinct features are provided to female users in the usage of the application, including gender filtering and invitation visibility."
+      },
+      {
+        "TITLE": "Multilingual",
+        "DESC": "The application supports various languages, including Chinese, French, Turkish, Arabic, Russian, and even more to come. Feel free to contact us if you can help us translate into other languages!"
+      },
+      {
+        "TITLE": "User Privacy",
+        "DESC": "The mobile application does not run any ads, and is open-source for the sake of information transparency. You may find the link to the source code at the bottom of the page."
+      }
+    ]
+  },
+  "EXPLORE": {
+    "TITLE": "Müslüman topluluklarını keşfet",
+    "LIST": [
+      {
+        "TITLE": "Basit cami araması",
+        "DESC": "Ummadığınız yerler 5 vakit ibadet edebileceğiniz huzurlu ve uygun yerler olabilir!"
+      },
+      {
+        "TITLE": "Anlık Toplanma ",
+        "DESC": "Cenazeler gibi olabildiğince insanın toplanması gereken durumlarda, Wahdapp benzersiz bir yardım seçeneği."
+      },
+      {
+        "TITLE": "Topluluk Bağı",
+        "DESC": "Wahdapp, Müslümanların kendi topluluklarıyla daha derin başlar kurmasını ve birbirleriyle yakınlaşmalarını hedefler."
+      }
+    ]
+  },
+  "DOWNLOAD": "İndir"
+}

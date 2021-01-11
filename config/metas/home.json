@@ -149,7 +149,7 @@
   },
   "fr": {
     "title": "Wahdapp | La Manière la Plus Innovante de se Rassembler pour les Prières",
-    "locale": "id",
+    "locale": "fr",
     "meta": [
       {
         "property": "description",
@@ -169,6 +169,43 @@
       },
       {
         "property": "og:url",
+        "content": "https://wahd.app/fr"
+      }
+    ],
+    "link": [
+      {
+        "rel": "canonical",
+        "href": "https://wahd.app/fr"
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wahd.app/fr",
+        "hrefLang": "x-default"
+      }
+    ]
+  },
+  "tr": {
+    "title": "Wahdapp | En etkili cemaat toplama yolu",
+    "locale": "tr",
+    "meta": [
+      {
+        "property": "description",
+        "content": "Kolayca yakınındaki cemaati bul"
+      },
+      {
+        "property": "og:title",
+        "content": "Wahdapp | En etkili cemaat toplama yolu"
+      },
+      {
+        "property": "og:locale",
+        "content": "tr_TR"
+      },
+      {
+        "property": "og:description",
+        "content": "Kolayca yakınındaki cemaati bul"
+      },
+      {
+        "property": "og:url",
         "content": "https://wahd.app"
       }
     ],
@@ -180,6 +217,43 @@
       {
         "rel": "alternate",
         "href": "https://wahd.app/fr",
+        "hrefLang": "x-default"
+      }
+    ]
+  },
+  "ar": {
+    "title": "الطريقة الأكثر ابتكارًا للتجمع للصلاة",
+    "locale": "ar",
+    "meta": [
+      {
+        "property": "description",
+        "content": "اكتشف بسهولة صلاة الجماعة في منطقتك"
+      },
+      {
+        "property": "og:title",
+        "content": "الطريقة الأكثر ابتكارًا للتجمع للصلاة"
+      },
+      {
+        "property": "og:locale",
+        "content": "ar_AR"
+      },
+      {
+        "property": "og:description",
+        "content": "اكتشف بسهولة صلاة الجماعة في منطقتك"
+      },
+      {
+        "property": "og:url",
+        "content": "https://wahd.app/ar"
+      }
+    ],
+    "link": [
+      {
+        "rel": "canonical",
+        "href": "https://wahd.app/ar"
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wahd.app/ar",
         "hrefLang": "x-default"
       }
     ]

@@ -1,0 +1,16 @@
+{
+  "NAV": {
+    "DONATE": "تبرع",
+    "FAQ": "اسألة مكررة",
+    "CONTACT": "تواصل"
+  },
+  "DOWNLOAD_NOW": "حمل الآن",
+  "FOOTER": {
+    "DOWNLOAD": "تحميل",
+    "INFORMATION": "المعلومات",
+    "POLICIES": "السياسات",
+    "PRIVACY_POLICY": "سياسة الخصوصية",
+    "LANGUAGES": "اللغات",
+    "SOURCE_CODE": "مصدر الرمز"
+  }
+}

@@ -8,6 +8,8 @@ const localeSubpaths = {
   tw: 'tw',
   id: 'id',
   fr: 'fr',
+  tr: 'tr',
+  ar: 'ar',
 };
 
 module.exports = withPlugins(

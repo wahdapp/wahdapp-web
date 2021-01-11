@@ -1,0 +1,34 @@
+{
+  "HEADER": "Answers to Your Questions",
+  "SUBHEADER": "Find them out here",
+  "FAQS": [
+    {
+      "Q": "What is Wahdapp?",
+      "A": "Wahdapp is a mobile application for Muslims to easily find or invite groups of people to pray together in their local areas. Users can join or invite for the five daily prayers, the friday prayer (Jumuah), and even the funeral prayer (Janazah)."
+    },
+    {
+      "Q": "How can I sign up for Wahdapp?",
+      "A": "You need to first download the mobile app of Wahdapp through Google Play Store if you are an Android user and App Store if you are an iOS user. Once you have installed the app, you may choose to sign up either with your own email or with an existing Google account.\n\n➤ If you choose to sign up with an email, you will have to fill some of your personal information, including your name and your gender. After creating an account, you should receive a confirmation email to your inbox. You will be able to start using the app immediately after clicking the confirmation link provided in the email.\n\n➤ If you choose to sign up with a Google account, you will only have to choose your gender before actually starting to use the app."
+    },
+    {
+      "Q": "Where can I use Wahdapp?",
+      "A": "Wahdapp is open to all Muslims around the world. That means, you can use it wherever you are, as long as you are connected to the Internet!"
+    },
+    {
+      "Q": "How can I see prayers in my area?",
+      "A": "You have two options to do so:\n\n➤ You should be able to see a list of prayers which are going to be performed near from your current location at the Home tab.\n\n➤ On the Map tab, there is a button at the top of the map screen written “QUERY THIS AREA”. After pressing the button, the system will query the nearby prayer invitations."
+    },
+    {
+      "Q": "How can I invite others to join my prayer?",
+      "A": "First, navigate to the map screen. There are 4 options which you can specify where the prayer is going to be performed:\n\n➤ Your current location. There is a floating button at the bottom-right corner of the map screen, and a marker pin will appear at your current location right after you press the button.\n\n➤ Specify by long pressing the screen. Hold your finger on the screen and you should see a marker pin appearing at the location your finger is pointing at. You may also drag the marker pin to another place after long pressing on the marker pin itself.\n\n➤ Choosing an already registered place on Google Maps. There are a lot of places on Google Maps which have their names registered, such as schools, buildings, and even mosques. You can select any of these places by simply pressing on them.\n\n➤ Choosing the exact same location as one of the past prayer invitations. After querying the nearby prayers on the map, you should be able to see green dots which represent the locations which some of the past prayers were performed. You will have the options to select the exact same spot after pressing any those green dots."
+    },
+    {
+      "Q": "I am a female. Can I also invite for prayers?",
+      "A": "Yes. Once you have invited for a prayer, only female users will be able to see it."
+    },
+    {
+      "Q": "Who can see my prayer invitations?",
+      "A": "It depends based on your gender as well as your filter preferences.\n\nIf you are a male, then your prayer invitations can be both visible to men and women. However, women have the option to filter out the invitations so that they would only see invitations made by women. By default, women are only able to see invitations by male if the number of participants is greater than 2. She may also choose to increase the number as she wishes."
+    }
+  ]
+}
