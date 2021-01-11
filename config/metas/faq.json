@@ -146,5 +146,79 @@
         "hrefLang": "x-default"
       }
     ]
+  },
+  "tr": {
+    "title": "Wahdapp | FAQ",
+    "locale": "en",
+    "meta": [
+      {
+        "property": "description",
+        "content": "Answers to Your Questions"
+      },
+      {
+        "property": "og:title",
+        "content": "Wahdapp | FAQ"
+      },
+      {
+        "property": "og:locale",
+        "content": "tr_TR"
+      },
+      {
+        "property": "og:description",
+        "content": "Answers to Your Questions"
+      },
+      {
+        "property": "og:url",
+        "content": "https://wahd.app/tr"
+      }
+    ],
+    "link": [
+      {
+        "rel": "canonical",
+        "href": "https://wahd.app/tr"
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wahd.app/tr",
+        "hrefLang": "x-default"
+      }
+    ]
+  },
+  "ar": {
+    "title": "أجوبة لأسئلتك",
+    "locale": "ar",
+    "meta": [
+      {
+        "property": "description",
+        "content": "اكتشفها الآن"
+      },
+      {
+        "property": "og:title",
+        "content": "أجوبة لأسئلتك"
+      },
+      {
+        "property": "og:locale",
+        "content": "ar_AR"
+      },
+      {
+        "property": "og:description",
+        "content": "اكتشفها الآن"
+      },
+      {
+        "property": "og:url",
+        "content": "https://wahd.app/ar"
+      }
+    ],
+    "link": [
+      {
+        "rel": "canonical",
+        "href": "https://wahd.app/ar"
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wahd.app/ar",
+        "hrefLang": "x-default"
+      }
+    ]
   }
 }
