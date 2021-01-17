@@ -8,32 +8,32 @@
     "LIST": [
       {
         "TITLE": "Cinsiyet Ayrımı",
-        "DESC": "Distinct features are provided to female users in the usage of the application, including gender filtering and invitation visibility."
+        "DESC": "Uygulama kadın kullanıcılara cinsiyet filtreleme ve davet görünürlüğü gibi farklı özellikler sunmaktadır."
       },
       {
-        "TITLE": "Multilingual",
-        "DESC": "The application supports various languages, including Chinese, French, Turkish, Arabic, Russian, and even more to come. Feel free to contact us if you can help us translate into other languages!"
+        "TITLE": "Çok Dilli",
+        "DESC": "Uygulamada Çince, Fransızca, Türkçe, Arapça, Rusça ve yakında daha fazlası olmak üzere birçok dil desteği mevcuttur. Diğer dillere tercümede yardımcı olabileceğinizi düşünüyorsanız bizimle iletişime geçmekten çekinmeyin!"
       },
       {
-        "TITLE": "User Privacy",
-        "DESC": "The mobile application does not run any ads, and is open-source for the sake of information transparency. You may find the link to the source code at the bottom of the page."
+        "TITLE": "Kullanıcı Gizliliği",
+        "DESC": "Mobil uygulamada reklam mevcut değildir, ayrıca bilgi şeffaflığı adına açık kaynak bir uygulamadır. Kaynak kodunun bağlantısını sayfanın aşağısında bulabilirsiniz."
       }
     ]
   },
   "EXPLORE": {
-    "TITLE": "Müslüman topluluklarını keşfet",
+    "TITLE": "Müslüman Toplulukları Keşfet",
     "LIST": [
       {
-        "TITLE": "Basit cami araması",
-        "DESC": "Ummadığınız yerler 5 vakit ibadet edebileceğiniz huzurlu ve uygun yerler olabilir!"
+        "TITLE": "Kolay Cami Araması",
+        "DESC": "Müslümanların beş vakit namazlarını kılabilmeleri için samimi ve uygun yerler mevcut olabilir!"
       },
       {
-        "TITLE": "Anlık Toplanma ",
-        "DESC": "Cenazeler gibi olabildiğince insanın toplanması gereken durumlarda, Wahdapp benzersiz bir yardım seçeneği."
+        "TITLE": "Anlık Toplanma",
+        "DESC": "Wahdapp, insanların en kısa sürede en fazla sayıda kişi ile toplanmaları gereken cenaze gibi durumlarda namaza toplanmak için benzersiz bir seçenek."
       },
       {
         "TITLE": "Topluluk Bağı",
-        "DESC": "Wahdapp, Müslümanların kendi topluluklarıyla daha derin başlar kurmasını ve birbirleriyle yakınlaşmalarını hedefler."
+        "DESC": "Wahdapp, Müslümanların sıkı bağlar kurmasına ve birlik sağlamalarına yardımcı olmayı amaçlar."
       }
     ]
   },
