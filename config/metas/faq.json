@@ -110,6 +110,43 @@
       }
     ]
   },
+  "fr": {
+    "title": "Wahdapp | FAQ",
+    "locale": "fr_FR",
+    "meta": [
+      {
+        "property": "description",
+        "content": "Réponses à vos Questions"
+      },
+      {
+        "property": "og:title",
+        "content": "Wahdapp | FAQ"
+      },
+      {
+        "property": "og:locale",
+        "content": "fr_FR"
+      },
+      {
+        "property": "og:description",
+        "content": "Réponses à vos Questions"
+      },
+      {
+        "property": "og:url",
+        "content": "https://wahd.app/fr"
+      }
+    ],
+    "link": [
+      {
+        "rel": "canonical",
+        "href": "https://wahd.app/fr"
+      },
+      {
+        "rel": "alternate",
+        "href": " https://wahd.app/fr",
+        "hrefLang": "fr"
+      }
+    ]
+  },
   "id": {
     "title": "Wahdapp | FAQ",
     "locale": "id",
