@@ -257,5 +257,42 @@
         "hrefLang": "x-default"
       }
     ]
+  },
+  "ru": {
+    "title": "Wahdapp | Самый инновационный способ собираться для молитв",
+    "locale": "ru",
+    "meta": [
+      {
+        "property": "description",
+        "content": "Легкий поиск совместных молитв в вашем регионе"
+      },
+      {
+        "property": "og:title",
+        "content": "Wahdapp | Самый инновационный способ собираться для молитв"
+      },
+      {
+        "property": "og:locale",
+        "content": "ru_RU"
+      },
+      {
+        "property": "og:description",
+        "content": "Легкий поиск совместных молитв в вашем регионе"
+      },
+      {
+        "property": "og:url",
+        "content": "https://wahd.app/ru"
+      }
+    ],
+    "link": [
+      {
+        "rel": "canonical",
+        "href": "https://wahd.app/ru"
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wahd.app/ru",
+        "hrefLang": "x-default"
+      }
+    ]
   }
 }

@@ -1,0 +1,16 @@
+{
+  "NAV": {
+    "DONATE": "Пожертвовать",
+    "FAQ": "FAQ",
+    "CONTACT": "Связаться с нами"
+  },
+  "DOWNLOAD_NOW": "Загрузить сейчас",
+  "FOOTER": {
+    "DOWNLOAD": "СКАЧАТЬ",
+    "INFORMATION": "ИНФОРМАЦИЯ",
+    "POLICIES": "ПОЛИТИКА",
+    "PRIVACY_POLICY": "Политика конфиденциальности",
+    "LANGUAGES": "ЯЗЫКИ",
+    "SOURCE_CODE": "Исходный код"
+  }
+}

@@ -73,10 +73,14 @@ type Props = {
 };
 
 FAQ.getInitialProps = ({ req }: PageContext) => {
-  return {
-    namespacesRequired: ['faq', 'common'],
-    language: req ? req.language : i18n.language ? i18n.language : 'en',
-  };
+  try {
+    return {
+      namespacesRequired: ['faq', 'common'],
+      language: req ? req.language : i18n.language ? i18n.language : 'en',
+    };
+  } catch (e) {
+    console.log(e);
+  }
 };
 
 export default FAQ;

@@ -10,6 +10,7 @@ const localeSubpaths = {
   fr: 'fr',
   tr: 'tr',
   ar: 'ar',
+  ru: 'ru',
 };
 
 module.exports = withPlugins(
@@ -18,7 +19,6 @@ module.exports = withPlugins(
     [withSass, {}],
   ],
   {
-    trailingSlash: true,
     rewrites: () => nextI18NextRewrites(localeSubpaths),
     publicRuntimeConfig: {
       localeSubpaths,
