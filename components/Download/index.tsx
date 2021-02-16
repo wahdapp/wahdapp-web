@@ -17,28 +17,28 @@ function Download() {
       <div className="app-download-wrapper">
         <Flip left duration={800} delay={1000}>
           <span className="store-img">
-            <a href="https://apps.apple.com" target="_blank" rel="noreferrer">
-              <Image
-                src="/assets/play-store-badge.png"
-                width={195}
-                height={60}
-                alt="app-store"
-              />
-            </a>
-          </span>
-        </Flip>
-        <Flip left duration={800} delay={1500}>
-          <span className="store-img">
             <a
               href="https://play.google.com/store/apps/details?id=com.aboudicheng.wahdapp"
               target="_blank"
               rel="noreferrer"
             >
               <Image
-                src="/assets/app-store-badge.png"
+                src="/assets/play-store-badge.png"
                 width={195}
                 height={60}
                 alt="play-store"
+              />
+            </a>
+          </span>
+        </Flip>
+        <Flip left duration={800} delay={1500}>
+          <span className="store-img">
+            <a href="https://apps.apple.com" target="_blank" rel="noreferrer">
+              <Image
+                src="/assets/app-store-badge.png"
+                width={195}
+                height={60}
+                alt="app-store"
               />
             </a>
           </span>
