@@ -17,9 +17,13 @@ const Footer: React.FC<{ lang: string }> = ({ lang }) => {
         <div className="columns">
           <div className="footer-col">
             <span className="label">{t('FOOTER.DOWNLOAD')}</span>
-            <Link href="#">
-              <a>Google Play</a>
-            </Link>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.aboudicheng.wahdapp"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Google Play
+            </a>
             <Link href="#">
               <a>App Store</a>
             </Link>

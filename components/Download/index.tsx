@@ -29,7 +29,11 @@ function Download() {
         </Flip>
         <Flip left duration={800} delay={1500}>
           <span className="store-img">
-            <a href="https://play.google.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.aboudicheng.wahdapp"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image
                 src="/assets/app-store-badge.png"
                 width={195}
