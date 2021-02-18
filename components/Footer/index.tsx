@@ -24,9 +24,13 @@ const Footer: React.FC<{ lang: string }> = ({ lang }) => {
             >
               Google Play
             </a>
-            <Link href="#">
-              <a>App Store</a>
-            </Link>
+            <a
+              href="https://apps.apple.com/app/id1554030477"
+              target="_blank"
+              rel="noreferrer"
+            >
+              App Store
+            </a>
           </div>
 
           <div className="footer-col">

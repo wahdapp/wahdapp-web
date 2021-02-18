@@ -33,7 +33,11 @@ function Download() {
         </Flip>
         <Flip left duration={800} delay={1500}>
           <span className="store-img">
-            <a href="https://apps.apple.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://apps.apple.com/app/id1554030477"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image
                 src="/assets/app-store-badge.png"
                 width={195}
