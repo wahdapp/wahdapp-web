@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://wahd.app/</loc>
+  <xhtml:link 
+    rel="alternate"
+    hreflang="zh-Hant"
+    href="https://wahd.app/tw"/>
+  <xhtml:link 
+    rel="alternate"
+    hreflang="zh-Hans"
+    href="https://wahd.app/cn"/>
+  <xhtml:link 
+    rel="alternate"
+    hreflang="ar"
+    href="https://wahd.app/ar"/>
+  <xhtml:link 
+    rel="alternate"
+    hreflang="fr"
+    href="https://wahd.app/fr"/>
+  <xhtml:link 
+    rel="alternate"
+    hreflang="id"
+    href="https://wahd.app/id"/>
+<xhtml:link 
+    rel="alternate"
+    hreflang="ru"
+    href="https://wahd.app/ru"/>
+<xhtml:link 
+    rel="alternate"
+    hreflang="tr"
+    href="https://wahd.app/tr"/>
+  <lastmod>2020-04-22T07:52:46+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://wahd.app/faq</loc>
+  <xhtml:link 
+    rel="alternate"
+    hreflang="zh-Hant"
+    href="https://wahd.app/faq/tw"/>
+  <xhtml:link 
+    rel="alternate"
+    hreflang="zh-Hans"
+    href="https://wahd.app/faq/cn"/>
+  <xhtml:link 
+    rel="alternate"
+    hreflang="ar"
+    href="https://wahd.app/faq/ar"/>
+  <xhtml:link 
+    rel="alternate"
+    hreflang="fr"
+    href="https://wahd.app/faq/fr"/>
+  <xhtml:link 
+    rel="alternate"
+    hreflang="id"
+    href="https://wahd.app/faq/id"/>
+<xhtml:link 
+    rel="alternate"
+    hreflang="ru"
+    href="https://wahd.app/faq/ru"/>
+<xhtml:link 
+    rel="alternate"
+    hreflang="tr"
+    href="https://wahd.app/faq/tr"/>
+  <lastmod>2021-02-19T08:45:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wahd.app/privacy</loc>
+  <lastmod>2021-02-19T08:45:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+</urlset>

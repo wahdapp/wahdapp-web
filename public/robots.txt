@@ -1,0 +1,4 @@
+Sitemap: https://wahd.app/sitemap.xml
+User-agent: *
+Disallow: 
+Allow: /
