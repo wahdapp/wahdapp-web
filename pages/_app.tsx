@@ -5,7 +5,10 @@ import Router from 'next/router';
 import ReactGA from 'react-ga';
 import { appWithTranslation, i18n } from 'i18n';
 import config from 'react-reveal/globals';
+import dynamic from 'next/dynamic';
 import 'styles/index.scss';
+
+const Crisp = dynamic(() => import('components/Crisp'));
 
 Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
@@ -27,7 +30,12 @@ function MyApp({ Component, pageProps }) {
     document.documentElement.lang = i18n.language;
   }, [i18n.language]);
 
-  return <Component {...pageProps} />;
+  return (
+    <>
+      {process.env.NODE_ENV === 'production' && <Crisp />}
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 MyApp.getInitialProps = async (appContext) => {

@@ -51,15 +51,6 @@ export default class WahdappDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          {process.env.NODE_ENV === 'production' && (
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-            window.$crisp=[];window.CRISP_WEBSITE_ID="14a4d06e-1b79-4893-9c81-2ab040bb00a0";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
-          `,
-              }}
-            />
-          )}
         </body>
       </Html>
     );
