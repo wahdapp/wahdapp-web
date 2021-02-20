@@ -11,6 +11,10 @@ export default class WahdappDocument extends Document {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <meta
+            name="apple-itunes-app"
+            content="app-id=1554030477, affiliate-data=Wahdapp, app-argument=https://wahd.app"
+          />
           <meta property="og:type" content="website" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
