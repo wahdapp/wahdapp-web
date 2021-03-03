@@ -52,6 +52,13 @@ const Footer: React.FC<{ lang: string }> = ({ lang }) => {
             >
               {t('FOOTER.SOURCE_CODE')}
             </a>
+            <a
+              href="https://twitter.com/WahdappOfficial"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Twitter
+            </a>
           </div>
 
           <div className="footer-col">
