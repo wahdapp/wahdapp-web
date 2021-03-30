@@ -177,7 +177,7 @@ function Navigation() {
             </Li>
             <Li>
               <Link href="/faq">
-                <ListItem active={pathname === 'faq'}>
+                <ListItem href="/faq" active={pathname === 'faq'}>
                   {t('common:NAV.FAQ')}
                 </ListItem>
               </Link>
@@ -205,6 +205,7 @@ function Navigation() {
         <Link href="/">
           <Label
             as="a"
+            href="/"
             fontSize={25}
             fontWeight="bold"
             textAlign="center"
@@ -238,6 +239,7 @@ function Navigation() {
         <Link href="/faq">
           <Label
             as="a"
+            href="/faq"
             fontSize={25}
             fontWeight="bold"
             textAlign="center"
