@@ -1,4 +1,4 @@
-@import "./nprogress.scss";
+@import './nprogress.scss';
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,8 @@ html {
   &:lang(ar) {
     font-family: Almarai, sans-serif;
   }
-  &:lang(tw), &:lang(cn) {
+  &:lang(tw),
+  &:lang(cn) {
     font-family: Noto Sans TC, sans-serif;
   }
 }
@@ -24,6 +25,17 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.header-bg {
+  z-index: -1;
+}
+
+.section-img {
+  transition: 0.4s;
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
 @mixin header($color, $letterSpacing) {
@@ -74,7 +86,6 @@ a {
   }
 
   .header-block {
-
     h1 {
       @include header(#ffffff, 2px);
       text-shadow: 0 2px 24px rgba(0, 0, 0, 0.55);
@@ -140,7 +151,7 @@ hr {
   width: 120px;
   height: 5px;
   border-radius: 100px;
-  background-image: linear-gradient(115deg,#6DC7B0, #78c8ef 102%);
+  background-image: linear-gradient(115deg, #6dc7b0, #78c8ef 102%);
   text-align: center;
   border: none;
   margin: 0 auto;

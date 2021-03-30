@@ -8,12 +8,11 @@ import i18nConfig from '../i18n.json';
 import config from 'react-reveal/globals';
 import dynamic from 'next/dynamic';
 import 'styles/index.scss';
-import 'styles/home.scss';
 import 'styles/faq.scss';
-import 'styles/components/button.scss';
 import 'styles/components/download.scss';
 import 'styles/components/footer.scss';
 import 'styles/components/nav.scss';
+import { ThemeProvider } from 'styled-components';
 
 const Crisp = dynamic(() => import('components/Crisp'));
 
@@ -22,6 +21,17 @@ Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
 
 config({ ssrFadeout: true });
+
+const theme = {
+  colors: {
+    primary: '#6DC7B0',
+    secondary: '#78c8ef',
+  },
+  fontSizes: [],
+  m: [],
+  space: [],
+  breakpoints: ['480px', '768px', '1024px'],
+};
 
 function MyApp({ Component, pageProps }) {
   const { lang } = useTranslation();
@@ -40,10 +50,10 @@ function MyApp({ Component, pageProps }) {
   }, [lang]);
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       {process.env.NODE_ENV === 'production' && <Crisp />}
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   );
 }
 

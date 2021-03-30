@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@types/styled-system": "^5.1.10",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "aos": "^2.3.4",
@@ -23,13 +24,16 @@
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.7.16",
     "react-select": "^3.1.1",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "styled-components": "^5.2.1",
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@types/node": "^14.14.9",
     "@types/react": "^16.14.0",
     "@types/react-scroll": "^1.8.2",
     "@types/react-select": "^3.0.28",
+    "@types/styled-components": "^5.1.9",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
     "eslint": "^7.13.0",
