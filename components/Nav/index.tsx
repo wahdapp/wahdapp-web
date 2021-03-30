@@ -156,6 +156,7 @@ function Navigation() {
               fontSize={24}
               fontWeight="bold"
               color="#ffffff"
+              fontFamily="Sen"
             >
               Wahdapp
             </Label>
@@ -210,6 +211,7 @@ function Navigation() {
             fontWeight="bold"
             textAlign="center"
             mb={20}
+            fontFamily="Sen"
           >
             Wahdapp
           </Label>
