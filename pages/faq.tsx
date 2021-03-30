@@ -8,7 +8,11 @@ type QA = {
   A: string;
 };
 
-const FAQ = () => {
+export function getStaticProps() {
+  return { props: {} };
+}
+
+function FAQ() {
   const { t, lang } = useTranslation();
   const FAQS = t('faq:FAQS', {}, { returnObjects: true }) as QA[];
 
@@ -59,6 +63,6 @@ const FAQ = () => {
       <Footer />
     </div>
   );
-};
+}
 
 export default FAQ;

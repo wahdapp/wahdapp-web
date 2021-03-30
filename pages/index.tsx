@@ -17,7 +17,11 @@ function goto(_target = '', offset = 0): void {
   });
 }
 
-const Home = () => {
+export function getStaticProps() {
+  return { props: {} };
+}
+
+function Home() {
   const { t, lang } = useTranslation();
 
   return (
@@ -184,6 +188,6 @@ const Home = () => {
       <Footer />
     </div>
   );
-};
+}
 
 export default Home;

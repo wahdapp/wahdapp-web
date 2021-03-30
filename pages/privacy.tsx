@@ -3,7 +3,11 @@ import Image from 'next/image';
 import { Nav, Footer, Download } from 'components';
 import useTranslation from 'next-translate/useTranslation';
 
-const Privacy = () => {
+export function getStaticProps() {
+  return { props: {} };
+}
+
+function Privacy() {
   const { lang } = useTranslation();
 
   return (
@@ -465,6 +469,6 @@ const Privacy = () => {
       <Footer />
     </div>
   );
-};
+}
 
 export default Privacy;

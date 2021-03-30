@@ -2,8 +2,7 @@
   "locales": ["en", "tw", "cn", "id", "fr", "tr", "ar", "ru"],
   "defaultLocale": "en",
   "pages": {
-    "*": ["common"],
-    "/": ["landing"],
-    "/faq": ["faq"]
+    "/": ["landing", "common"],
+    "/faq": ["faq", "common"]
   }
 }

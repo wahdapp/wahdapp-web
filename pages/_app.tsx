@@ -1,4 +1,3 @@
-import App from 'next/app';
 import { useEffect } from 'react';
 import NProgress from 'nprogress';
 import Router from 'next/router';
@@ -48,11 +47,5 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-MyApp.getInitialProps = async (appContext) => {
-  const appProps = await App.getInitialProps(appContext);
-
-  return appProps;
-};
-
 // @ts-ignore
-export default appWithI18n(MyApp, i18nConfig);
+export default appWithI18n(MyApp, { ...i18nConfig, skipInitialProps: true });
