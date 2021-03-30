@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import { useTranslation, Link } from 'i18n';
-import './style.scss';
+import useTranslation from 'next-translate/useTranslation';
+import Link from 'next/link';
 
 function Navigation() {
-  const { t } = useTranslation(['common']);
+  const { t } = useTranslation();
   const [isActive, setIsActive] = useState(false);
   const { pathname } = useRouter();
 
@@ -22,16 +22,16 @@ function Navigation() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {t('NAV.DONATE')}
+                {t('common:NAV.DONATE')}
               </a>
             </li>
             <li>
-              <a href="mailto:support@wahd.app">{t('NAV.CONTACT')}</a>
+              <a href="mailto:support@wahd.app">{t('common:NAV.CONTACT')}</a>
             </li>
             <li>
               <Link href="/faq">
                 <a className={pathname === '/faq' && 'active'}>
-                  {t('NAV.FAQ')}
+                  {t('common:NAV.FAQ')}
                 </a>
               </Link>
             </li>
@@ -57,11 +57,11 @@ function Navigation() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {t('NAV.DONATE')}
+          {t('common:NAV.DONATE')}
         </a>
-        <a href="mailto:support@wahd.app">{t('NAV.CONTACT')}</a>
+        <a href="mailto:support@wahd.app">{t('common:NAV.CONTACT')}</a>
         <Link href="/faq">
-          <a>{t('NAV.FAQ')}</a>
+          <a>{t('common:NAV.FAQ')}</a>
         </Link>
       </div>
     </>

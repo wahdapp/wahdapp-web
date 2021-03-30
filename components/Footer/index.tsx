@@ -1,11 +1,13 @@
-import { useTranslation, Link, i18n } from 'i18n';
+import { memo, useMemo } from 'react';
+import useTranslation from 'next-translate/useTranslation';
 import Select from 'react-select';
 import { languages } from 'constants/languages';
-import './style.scss';
-import { memo, useMemo } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-const Footer: React.FC<{ lang: string }> = ({ lang }) => {
-  const { t } = useTranslation(['common']);
+const Footer = () => {
+  const { t, lang } = useTranslation();
+  const Router = useRouter();
   const currentLang = useMemo(
     () => languages.find((lng) => lng.code === lang),
     [lang]
@@ -16,7 +18,7 @@ const Footer: React.FC<{ lang: string }> = ({ lang }) => {
       <div className="background-cover">
         <div className="columns">
           <div className="footer-col">
-            <span className="label">{t('FOOTER.DOWNLOAD')}</span>
+            <span className="label">{t('common:FOOTER.DOWNLOAD')}</span>
             <a
               href="https://play.google.com/store/apps/details?id=com.aboudicheng.wahdapp"
               target="_blank"
@@ -34,23 +36,23 @@ const Footer: React.FC<{ lang: string }> = ({ lang }) => {
           </div>
 
           <div className="footer-col">
-            <span className="label">{t('FOOTER.INFORMATION')}</span>
+            <span className="label">{t('common:FOOTER.INFORMATION')}</span>
             <a
               href="https://www.paypal.me/abdullahcheng"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {t('NAV.DONATE')}
+              {t('common:NAV.DONATE')}
             </a>
             <Link href="/faq">
-              <a>{t('NAV.FAQ')}</a>
+              <a>{t('common:NAV.FAQ')}</a>
             </Link>
             <a
               href="https://github.com/wahdapp"
               target="_blank"
               rel="noreferrer"
             >
-              {t('FOOTER.SOURCE_CODE')}
+              {t('common:FOOTER.SOURCE_CODE')}
             </a>
             <a
               href="https://twitter.com/WahdappOfficial"
@@ -62,15 +64,15 @@ const Footer: React.FC<{ lang: string }> = ({ lang }) => {
           </div>
 
           <div className="footer-col">
-            <span className="label">{t('FOOTER.POLICIES')}</span>
+            <span className="label">{t('common:FOOTER.POLICIES')}</span>
             <Link href="/privacy">
-              <a>{t('FOOTER.PRIVACY_POLICY')}</a>
+              <a>{t('common:FOOTER.PRIVACY_POLICY')}</a>
             </Link>
           </div>
 
           <div className="footer-col down">
             <div className="footer-col">
-              <span className="label">{t('FOOTER.LANGUAGES')}</span>
+              <span className="label">{t('common:FOOTER.LANGUAGES')}</span>
               <Select
                 defaultValue={{
                   value: currentLang.code,
@@ -81,7 +83,9 @@ const Footer: React.FC<{ lang: string }> = ({ lang }) => {
                   label: lng.label,
                 }))}
                 onChange={({ value }) => {
-                  i18n.changeLanguage(value);
+                  Router.push(Router.pathname, Router.pathname, {
+                    locale: value,
+                  });
                 }}
                 isSearchable={false}
                 styles={{

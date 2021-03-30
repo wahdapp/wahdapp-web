@@ -1,5 +1,4 @@
 import { CSSProperties, memo } from 'react';
-import './styles.scss';
 
 interface Props extends React.HTMLAttributes<HTMLButtonElement> {
   children: JSX.Element | string;

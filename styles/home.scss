@@ -1,4 +1,4 @@
-@import './index.scss';
+// @import './index.scss';
 
 #home {
   .top-header {
@@ -262,10 +262,21 @@
     padding-bottom: 50px;
     background: #e8f9f3;
     h2 {
-      @include header(#545454, 1px);
       text-shadow: 0 2px 24px rgba(0, 0, 0, 0.12);
       margin-bottom: 45px;
       text-align: center;
+      font-size: 54px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: 545454;
+      margin-bottom: 15px;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 40px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 30px;
+      }
     }
     .app-download-wrapper {
       display: flex;

@@ -1,18 +1,17 @@
 import Image from 'next/image';
 import { Element } from 'react-scroll';
-import { useTranslation } from 'i18n';
+import useTranslation from 'next-translate/useTranslation';
 import Flip from 'react-reveal/Flip';
 import Zoom from 'react-reveal/Zoom';
-import './styles.scss';
 
 function Download() {
-  const { t } = useTranslation(['common']);
+  const { t } = useTranslation();
 
   return (
     <section className="download">
       <Element name="download" />
       <Zoom duration={800} delay={500}>
-        <h2>{t('DOWNLOAD_NOW')}</h2>
+        <h2>{t('common:DOWNLOAD_NOW')}</h2>
       </Zoom>
       <div className="app-download-wrapper">
         <Flip left duration={800} delay={1000}>

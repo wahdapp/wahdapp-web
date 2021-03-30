@@ -1,22 +1,16 @@
 import { Nav, Footer, Meta, Download } from 'components';
-import { useTranslation, i18n } from 'i18n';
 import Image from 'next/image';
 import meta from 'config/metas/faq.json';
-import { PageContext } from 'types';
-import { NextPage } from 'next';
-import 'styles/faq.scss';
-import { TFunction } from 'next-i18next';
+import useTranslation from 'next-translate/useTranslation';
 
 type QA = {
   Q: string;
   A: string;
 };
 
-const FAQ: NextPage<Props> = ({ language }) => {
-  const { t }: { t: TFunction } = useTranslation(['faq']);
-  const FAQS = t('faq:FAQS', { returnObjects: true }) as QA[];
-
-  const lang = i18n.language ? i18n.language : language ? language : 'en';
+const FAQ = () => {
+  const { t, lang } = useTranslation();
+  const FAQS = t('faq:FAQS', {}, { returnObjects: true }) as QA[];
 
   return (
     <div id="faq">
@@ -62,25 +56,9 @@ const FAQ: NextPage<Props> = ({ language }) => {
 
       <Download />
 
-      <Footer lang={lang} />
+      <Footer />
     </div>
   );
-};
-
-type Props = {
-  namespacesRequired: string[];
-  language: string;
-};
-
-FAQ.getInitialProps = ({ req }: PageContext) => {
-  try {
-    return {
-      namespacesRequired: ['faq', 'common'],
-      language: req ? req.language : i18n.language ? i18n.language : 'en',
-    };
-  } catch (e) {
-    console.log(e);
-  }
 };
 
 export default FAQ;

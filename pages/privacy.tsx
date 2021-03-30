@@ -1,13 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Nav, Footer, Download } from 'components';
-import { PageContext } from 'types';
-import { i18n } from 'i18n';
-import { NextPage } from 'next';
-import 'styles/faq.scss';
+import useTranslation from 'next-translate/useTranslation';
 
-const Privacy: NextPage<Props> = ({ language }) => {
-  const lang = i18n.language ? i18n.language : language ? language : 'en';
+const Privacy = () => {
+  const { lang } = useTranslation();
 
   return (
     <div id="faq">
@@ -465,21 +462,9 @@ const Privacy: NextPage<Props> = ({ language }) => {
 
       <Download />
 
-      <Footer lang={lang} />
+      <Footer />
     </div>
   );
-};
-
-type Props = {
-  namespacesRequired: string[];
-  language: string;
-};
-
-Privacy.getInitialProps = ({ req }: PageContext) => {
-  return {
-    namespacesRequired: ['faq', 'common'],
-    language: req ? req.language : i18n.language ? i18n.language : 'en',
-  };
 };
 
 export default Privacy;

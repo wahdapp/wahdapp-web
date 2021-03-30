@@ -3,10 +3,18 @@ import { useEffect } from 'react';
 import NProgress from 'nprogress';
 import Router from 'next/router';
 import ReactGA from 'react-ga';
-import { appWithTranslation, i18n } from 'i18n';
+import useTranslation from 'next-translate/useTranslation';
+import appWithI18n from 'next-translate/appWithI18n';
+import i18nConfig from '../i18n.json';
 import config from 'react-reveal/globals';
 import dynamic from 'next/dynamic';
 import 'styles/index.scss';
+import 'styles/home.scss';
+import 'styles/faq.scss';
+import 'styles/components/button.scss';
+import 'styles/components/download.scss';
+import 'styles/components/footer.scss';
+import 'styles/components/nav.scss';
 
 const Crisp = dynamic(() => import('components/Crisp'));
 
@@ -17,6 +25,8 @@ Router.events.on('routeChangeError', () => NProgress.done());
 config({ ssrFadeout: true });
 
 function MyApp({ Component, pageProps }) {
+  const { lang } = useTranslation();
+
   useEffect(() => {
     if (process.env.NODE_ENV === 'production') {
       ReactGA.initialize('UA-172829827-1');
@@ -27,8 +37,8 @@ function MyApp({ Component, pageProps }) {
 
   // dynamically set html lang attribute
   useEffect(() => {
-    document.documentElement.lang = i18n.language;
-  }, [i18n.language]);
+    document.documentElement.lang = lang;
+  }, [lang]);
 
   return (
     <>
@@ -44,4 +54,5 @@ MyApp.getInitialProps = async (appContext) => {
   return appProps;
 };
 
-export default appWithTranslation(MyApp);
+// @ts-ignore
+export default appWithI18n(MyApp, i18nConfig);

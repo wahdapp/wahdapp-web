@@ -1,16 +1,12 @@
 import { Nav, Footer, Meta, Button, Download } from 'components';
 import Image from 'next/image';
-import { useTranslation, i18n } from 'i18n';
 import meta from 'config/metas/home.json';
 import { scroller } from 'react-scroll';
 import { Users, Globe, Key } from 'react-feather';
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 import Zoom from 'react-reveal/Zoom';
-import { NextPage } from 'next';
-import { PageContext } from 'types';
-import { TFunction } from 'next-i18next';
-import 'styles/home.scss';
+import useTranslation from 'next-translate/useTranslation';
 
 function goto(_target = '', offset = 0): void {
   scroller.scrollTo(_target, {
@@ -21,10 +17,8 @@ function goto(_target = '', offset = 0): void {
   });
 }
 
-const Home: NextPage<Props> = ({ language }) => {
-  const { t }: { t: TFunction } = useTranslation(['landing']);
-
-  const lang = i18n.language ? i18n.language : language ? language : 'en';
+const Home = () => {
+  const { t, lang } = useTranslation();
 
   return (
     <div id="home">
@@ -50,17 +44,19 @@ const Home: NextPage<Props> = ({ language }) => {
             <div className="header-wrapper">
               <div className="header-block">
                 <Fade up duration={800} delay={500}>
-                  <h1>{t('HEADER.TITLE')}</h1>
+                  <h1>{t('landing:HEADER.TITLE')}</h1>
                 </Fade>
                 <Fade up duration={800} delay={1000}>
-                  <span className="subheader">{t('HEADER.SUBTITLE')}</span>
+                  <span className="subheader">
+                    {t('landing:HEADER.SUBTITLE')}
+                  </span>
                 </Fade>
               </div>
             </div>
             <div className="download-btn">
               <Zoom duration={800} delay={1500} center>
                 <Button onClick={() => goto('download')}>
-                  {t('DOWNLOAD')}
+                  {t('landing:DOWNLOAD')}
                 </Button>
               </Zoom>
             </div>
@@ -71,7 +67,7 @@ const Home: NextPage<Props> = ({ language }) => {
       <section id="benefits">
         <div className="container">
           <Fade duration={800} delay={500}>
-            <h2>{t('BENEFITS.TITLE')}</h2>
+            <h2>{t('landing:BENEFITS.TITLE')}</h2>
           </Fade>
           <Zoom duration={800} delay={1000}>
             <hr />
@@ -80,22 +76,22 @@ const Home: NextPage<Props> = ({ language }) => {
             <Flip left duration={800}>
               <div className="card">
                 <Users size={48} color="#6DC7B0" />
-                <h4>{t('BENEFITS.LIST.0.TITLE')}</h4>
-                <p>{t('BENEFITS.LIST.0.DESC')}</p>
+                <h4>{t('landing:BENEFITS.LIST.0.TITLE')}</h4>
+                <p>{t('landing:BENEFITS.LIST.0.DESC')}</p>
               </div>
             </Flip>
             <Flip left duration={800} delay={300}>
               <div className="card">
                 <Globe size={48} color="#6DC7B0" />
-                <h4>{t('BENEFITS.LIST.1.TITLE')}</h4>
-                <p>{t('BENEFITS.LIST.1.DESC')}</p>
+                <h4>{t('landing:BENEFITS.LIST.1.TITLE')}</h4>
+                <p>{t('landing:BENEFITS.LIST.1.DESC')}</p>
               </div>
             </Flip>
             <Flip left duration={800} delay={600}>
               <div className="card">
                 <Key size={48} color="#6DC7B0" />
-                <h4>{t('BENEFITS.LIST.2.TITLE')}</h4>
-                <p>{t('BENEFITS.LIST.2.DESC')}</p>
+                <h4>{t('landing:BENEFITS.LIST.2.TITLE')}</h4>
+                <p>{t('landing:BENEFITS.LIST.2.DESC')}</p>
               </div>
             </Flip>
           </div>
@@ -107,7 +103,7 @@ const Home: NextPage<Props> = ({ language }) => {
           <div className="section">
             <div className="text-content full">
               <Fade duration={800} delay={600}>
-                <h2>{t('EXPLORE.TITLE')}</h2>
+                <h2>{t('landing:EXPLORE.TITLE')}</h2>
               </Fade>
               <Zoom duration={800} delay={900}>
                 <hr />
@@ -129,8 +125,10 @@ const Home: NextPage<Props> = ({ language }) => {
             </Fade>
             <Fade up duration={800} delay={600}>
               <div className="text-content">
-                <h3>{t('EXPLORE.LIST.0.TITLE')}</h3>
-                <span className="subheader">{t('EXPLORE.LIST.0.DESC')}</span>
+                <h3>{t('landing:EXPLORE.LIST.0.TITLE')}</h3>
+                <span className="subheader">
+                  {t('landing:EXPLORE.LIST.0.DESC')}
+                </span>
               </div>
             </Fade>
           </div>
@@ -138,8 +136,10 @@ const Home: NextPage<Props> = ({ language }) => {
           <div className="section row">
             <Fade up duration={800} delay={600}>
               <div className="text-content">
-                <h3>{t('EXPLORE.LIST.1.TITLE')}</h3>
-                <span className="subheader">{t('EXPLORE.LIST.1.DESC')}</span>
+                <h3>{t('landing:EXPLORE.LIST.1.TITLE')}</h3>
+                <span className="subheader">
+                  {t('landing:EXPLORE.LIST.1.DESC')}
+                </span>
               </div>
             </Fade>
             <Fade up duration={800} delay={600}>
@@ -169,8 +169,10 @@ const Home: NextPage<Props> = ({ language }) => {
             </Fade>
             <Fade up duration={800} delay={600}>
               <div className="text-content">
-                <h3>{t('EXPLORE.LIST.2.TITLE')}</h3>
-                <span className="subheader">{t('EXPLORE.LIST.2.DESC')}</span>
+                <h3>{t('landing:EXPLORE.LIST.2.TITLE')}</h3>
+                <span className="subheader">
+                  {t('landing:EXPLORE.LIST.2.DESC')}
+                </span>
               </div>
             </Fade>
           </div>
@@ -179,21 +181,9 @@ const Home: NextPage<Props> = ({ language }) => {
 
       <Download />
 
-      <Footer lang={lang} />
+      <Footer />
     </div>
   );
-};
-
-type Props = {
-  namespacesRequired: string[];
-  language: string;
-};
-
-Home.getInitialProps = ({ req }: PageContext) => {
-  return {
-    namespacesRequired: ['landing', 'common'],
-    language: req ? req.language : i18n.language ? i18n.language : 'en',
-  };
 };
 
 export default Home;
