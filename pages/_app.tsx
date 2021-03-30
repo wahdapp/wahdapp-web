@@ -7,12 +7,8 @@ import appWithI18n from 'next-translate/appWithI18n';
 import i18nConfig from '../i18n.json';
 import config from 'react-reveal/globals';
 import dynamic from 'next/dynamic';
-import 'styles/index.scss';
-import 'styles/faq.scss';
-import 'styles/components/download.scss';
-import 'styles/components/footer.scss';
-import 'styles/components/nav.scss';
 import { ThemeProvider } from 'styled-components';
+import 'styles/index.scss';
 
 const Crisp = dynamic(() => import('components/Crisp'));
 

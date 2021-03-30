@@ -47,6 +47,11 @@ const ButtonStyle = styled.button<ButtonProps>`
     transform: translateY(-5px);
   }
 
+  &:focus {
+    outline: none;
+    box-shadow: 0 8px 40px 0 #12967a;
+  }
+
   @media screen and (max-width: 1024px) {
     width: 100%;
   }

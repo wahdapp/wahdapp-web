@@ -4,6 +4,9 @@ import Select from 'react-select';
 import { languages } from 'constants/languages';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Flex from 'components/Flex';
+import { Label, P } from 'components/Text';
+import Box from 'components/Box';
 
 const Footer = () => {
   const { t, lang } = useTranslation();
@@ -15,64 +18,169 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="background-cover">
-        <div className="columns">
-          <div className="footer-col">
-            <span className="label">{t('common:FOOTER.DOWNLOAD')}</span>
-            <a
+      <Flex
+        position="relative"
+        minHeight={360}
+        flexDirection="column"
+        justifyContent="space-between"
+        alignItems="center"
+        backgroundColor="#12967a"
+      >
+        <Flex
+          justifyContent="space-around"
+          width="100%"
+          maxWidth={['90%', '90%', 960]}
+          margin="0 auto"
+          py={70}
+          px={0}
+          flexDirection={['column', 'column', 'row']}
+        >
+          <Flex flexDirection="column" width={210} mb={30}>
+            <Label
+              mb={18}
+              opacity={0.6}
+              fontSize={16}
+              fontWeight="bold"
+              letterSpacing={2.5}
+              color="#f6f8f9"
+              style={{ textTransform: 'uppercase' }}
+            >
+              {t('common:FOOTER.DOWNLOAD')}
+            </Label>
+            <Label
+              as="a"
+              mb={10}
+              fontSize={16}
+              fontWeight="bold"
+              letterSpacing={1.2}
+              color="#f6f8f9"
               href="https://play.google.com/store/apps/details?id=com.aboudicheng.wahdapp"
               target="_blank"
               rel="noreferrer"
             >
               Google Play
-            </a>
-            <a
+            </Label>
+            <Label
+              as="a"
+              mb={10}
+              fontSize={16}
+              fontWeight="bold"
+              letterSpacing={1.2}
+              color="#f6f8f9"
               href="https://apps.apple.com/app/id1554030477"
               target="_blank"
               rel="noreferrer"
             >
               App Store
-            </a>
-          </div>
+            </Label>
+          </Flex>
 
-          <div className="footer-col">
-            <span className="label">{t('common:FOOTER.INFORMATION')}</span>
-            <a
+          <Flex flexDirection="column" width={210} mb={30}>
+            <Label
+              mb={18}
+              opacity={0.6}
+              fontSize={16}
+              fontWeight="bold"
+              letterSpacing={2.5}
+              color="#f6f8f9"
+              style={{ textTransform: 'uppercase' }}
+            >
+              {t('common:FOOTER.INFORMATION')}
+            </Label>
+            <Label
+              as="a"
+              mb={10}
+              fontSize={16}
+              fontWeight="bold"
+              letterSpacing={1.2}
+              color="#f6f8f9"
               href="https://www.paypal.me/abdullahcheng"
               target="_blank"
               rel="noopener noreferrer"
             >
               {t('common:NAV.DONATE')}
-            </a>
+            </Label>
             <Link href="/faq">
-              <a>{t('common:NAV.FAQ')}</a>
+              <Label
+                as="a"
+                mb={10}
+                fontSize={16}
+                fontWeight="bold"
+                letterSpacing={1.2}
+                color="#f6f8f9"
+                href="faq"
+              >
+                {t('common:NAV.FAQ')}
+              </Label>
             </Link>
-            <a
+            <Label
+              as="a"
+              mb={10}
+              fontSize={16}
+              fontWeight="bold"
+              letterSpacing={1.2}
+              color="#f6f8f9"
               href="https://github.com/wahdapp"
               target="_blank"
               rel="noreferrer"
             >
               {t('common:FOOTER.SOURCE_CODE')}
-            </a>
-            <a
+            </Label>
+            <Label
+              as="a"
+              mb={10}
+              fontSize={16}
+              fontWeight="bold"
+              letterSpacing={1.2}
+              color="#f6f8f9"
               href="https://twitter.com/WahdappOfficial"
               target="_blank"
               rel="noreferrer"
             >
               Twitter
-            </a>
-          </div>
+            </Label>
+          </Flex>
 
-          <div className="footer-col">
-            <span className="label">{t('common:FOOTER.POLICIES')}</span>
+          <Flex flexDirection="column" width={210} mb={30}>
+            <Label
+              mb={18}
+              opacity={0.6}
+              fontSize={16}
+              fontWeight="bold"
+              letterSpacing={2.5}
+              color="#f6f8f9"
+              style={{ textTransform: 'uppercase' }}
+            >
+              {t('common:FOOTER.POLICIES')}
+            </Label>
             <Link href="/privacy">
-              <a>{t('common:FOOTER.PRIVACY_POLICY')}</a>
+              <Label
+                as="a"
+                mb={10}
+                fontSize={16}
+                fontWeight="bold"
+                letterSpacing={1.2}
+                color="#f6f8f9"
+                href="/privacy"
+              >
+                {t('common:FOOTER.PRIVACY_POLICY')}
+              </Label>
             </Link>
-          </div>
+          </Flex>
 
-          <div className="footer-col down">
-            <div className="footer-col">
-              <span className="label">{t('common:FOOTER.LANGUAGES')}</span>
+          <Flex flexDirection="column" width={210} mb={30}>
+            <Flex flexDirection="column">
+              <Label
+                mb={18}
+                opacity={0.6}
+                fontSize={16}
+                fontWeight="bold"
+                letterSpacing={2.5}
+                color="#f6f8f9"
+                style={{ textTransform: 'uppercase' }}
+              >
+                {t('common:FOOTER.LANGUAGES')}
+              </Label>
               <Select
                 defaultValue={{
                   value: currentLang.code,
@@ -106,16 +214,30 @@ const Footer = () => {
                   }),
                 }}
               />
-            </div>
-            <div>
-              <div className="trademark">
+            </Flex>
+            <Box mt={30}>
+              <P
+                mb={10}
+                fontSize={16}
+                fontWeight="normal"
+                letterSpacing={1.2}
+                color="#f6f8f9"
+              >
                 All rights reserved. {new Date().getFullYear()}
-              </div>
-              <div className="trademark bold">Wahdapp</div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </P>
+              <P
+                mb={10}
+                fontSize={16}
+                fontWeight="bold"
+                letterSpacing={1.2}
+                color="#f6f8f9"
+              >
+                Wahdapp
+              </P>
+            </Box>
+          </Flex>
+        </Flex>
+      </Flex>
     </footer>
   );
 };

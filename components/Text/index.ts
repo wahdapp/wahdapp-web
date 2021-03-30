@@ -79,6 +79,16 @@ export const P = styled.p<Props>`
   ${textShadow}
 `;
 
+export const Label = styled.label<Props>`
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  ${color}
+  ${space}
+  ${typography}
+  ${textShadow}
+`;
+
 export const B = styled.b<Props>`
   font-weight: bold;
   font-size: 12px;

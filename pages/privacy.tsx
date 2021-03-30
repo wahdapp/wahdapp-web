@@ -1,15 +1,32 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Nav, Footer, Download } from 'components';
-import useTranslation from 'next-translate/useTranslation';
+import Box from 'components/Box';
+import { H1 } from 'components/Text';
+import styled from 'styled-components';
+
+const H2 = styled.h2`
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #444444;
+  margin-bottom: 20px;
+  font-size: 32px;
+`;
+
+const P = styled.p`
+  letter-spacing: 1px;
+  color: #545454;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 1.7;
+  white-space: pre-line;
+`;
 
 export function getStaticProps() {
   return { props: {} };
 }
 
 function Privacy() {
-  const { lang } = useTranslation();
-
   return (
     <div id="faq">
       <Head>
@@ -17,30 +34,41 @@ function Privacy() {
       </Head>
       <Nav />
 
-      <div className="top-header">
-        <div className="background-cover">
-          <div className="container">
-            <div>
-              <Image
-                src="/assets/mecca.jpg"
-                layout="fill"
-                alt="background"
-                className="header-bg"
-              />
-            </div>
-            <div className="header-wrapper">
-              <div className="header-block">
-                <h1>Privacy Policy</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Box position="relative" width="100%">
+        <Box
+          position="relative"
+          minHeight={[280, 280, 280, 450]}
+          background="linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.55))"
+        >
+          <Box
+            maxWidth={['90%', '90%', '90%', 960]}
+            m="0 auto"
+            pt={[0, 0, 0, 120, 120]}
+          >
+            <Image
+              src="/assets/mecca.jpg"
+              layout="fill"
+              alt="background"
+              className="header-bg"
+            />
+            <Box width="100%" pt={[100, 80, 80, 80]}>
+              <H1
+                fontSize={[30, 30, 40, 54]}
+                letterSpacing={2}
+                textShadow="0 2px 24px rgba(0, 0, 0, 0.55)"
+                mb={15}
+              >
+                Privacy Policy
+              </H1>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
 
-      <div className="content">
-        <div className="container">
-          <p>Last updated December 14, 2020</p>
-          <p>
+      <Box as="section" width="100%" pt={70} pb={90}>
+        <Box maxWidth={['90%', '90%', '90%', 960]} m="0 auto">
+          <P>Last updated December 14, 2020</P>
+          <P>
             Thank you for choosing to be part of our community at Wahdapp
             (“Company”, “we”, “us”, or “our”). We are committed to protecting
             your personal information and your right to privacy. If you have any
@@ -65,11 +93,11 @@ function Privacy() {
             <br />
             Please read this privacy policy carefully as it will help you make
             informed decisions about sharing your personal information with us.
-          </p>
+          </P>
 
-          <h2>1. WHAT INFORMATION DO WE COLLECT?</h2>
-          <p>Personal information you disclose to us</p>
-          <p>
+          <H2>1. WHAT INFORMATION DO WE COLLECT?</H2>
+          <P>Personal information you disclose to us</P>
+          <P>
             We collect personal information that you voluntarily provide to us
             when registering at the Apps, expressing an interest in obtaining
             information about us or our products and services, when
@@ -97,10 +125,10 @@ function Privacy() {
             All personal information that you provide to us must be true,
             complete and accurate, and you must notify us of any changes to such
             personal information.
-          </p>
+          </P>
 
-          <p>Information automatically collected</p>
-          <p>
+          <P>Information automatically collected</P>
+          <P>
             We automatically collect certain information when you visit, use or
             navigate the Apps. This information does not reveal your specific
             identity (like your name or contact information) but may include
@@ -119,10 +147,10 @@ function Privacy() {
             <br />
             Online Identifiers. We collect device's geolocation; and other
             similar data.
-          </p>
+          </P>
 
-          <p>Information collected through our Apps</p>
-          <p>
+          <P>Information collected through our Apps</P>
+          <P>
             ➤ Geo-Location Information. We may request access or permission to
             and track location-based information from your mobile device, either
             continuously or while you are using our mobile application, to
@@ -133,10 +161,10 @@ function Privacy() {
             notifications regarding your account or the mobile application. If
             you wish to opt-out from receiving these types of communications,
             you may turn them off in your device's settings.
-          </p>
+          </P>
 
-          <h2>2. HOW DO WE USE YOUR INFORMATION?</h2>
-          <p>
+          <H2>2. HOW DO WE USE YOUR INFORMATION?</H2>
+          <P>
             We use personal information collected via our Apps for a variety of
             business purposes described below. We process your personal
             information for these purposes in reliance on our legitimate
@@ -174,10 +202,10 @@ function Privacy() {
             anonymized form so that it is not associated with individual end
             users and does not include personal information. We will not use
             identifiable personal information without your consent.
-          </p>
+          </P>
 
-          <h2>3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</h2>
-          <p>
+          <H2>3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</H2>
+          <P>
             We may process or share data based on the following legal basis:
             <br />
             <br />➤ Consent: We may process your data if you have given us
@@ -232,18 +260,18 @@ function Privacy() {
             information in connection with, or during negotiations of, any
             merger, sale of company assets, financing, or acquisition of all or
             a portion of our business to another company.
-          </p>
+          </P>
 
-          <h2>4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</h2>
-          <p>
+          <H2>4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</H2>
+          <P>
             We may use cookies and similar tracking technologies (like web
             beacons and pixels) to access or store information. Specific
             information about how we use such technologies and how you can
             refuse certain cookies is set out in our Cookie Policy.
-          </p>
+          </P>
 
-          <h2>5. DO WE USE GOOGLE MAPS?</h2>
-          <p>
+          <H2>5. DO WE USE GOOGLE MAPS?</H2>
+          <P>
             This website, mobile application, or Facebook application uses
             Google Maps APIs. You may find the Google Maps APIs Terms of Service
             here. To better understand Google’s Privacy Policy, please refer to
@@ -252,10 +280,10 @@ function Privacy() {
             <br />
             By using our Maps API Implementation, you agree to be bound by
             Google’s Terms of Service.
-          </p>
+          </P>
 
-          <h2>6. HOW DO WE HANDLE YOUR SOCIAL LOGINS?</h2>
-          <p>
+          <H2>6. HOW DO WE HANDLE YOUR SOCIAL LOGINS?</H2>
+          <P>
             Our Apps offer you the ability to register and login using your
             third party social media account details (like your Facebook or
             Twitter logins). Where you choose to do this, we will receive
@@ -274,10 +302,10 @@ function Privacy() {
             their privacy policy to understand how they collect, use and share
             your personal information, and how you can set your privacy
             preferences on their sites and apps.
-          </p>
+          </P>
 
-          <h2>7. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
-          <p>
+          <H2>7. HOW LONG DO WE KEEP YOUR INFORMATION?</H2>
+          <P>
             We will only keep your personal information for as long as it is
             necessary for the purposes set out in this privacy policy, unless a
             longer retention period is required or permitted by law (such as
@@ -292,10 +320,10 @@ function Privacy() {
             has been stored in backup archives), then we will securely store
             your personal information and isolate it from any further processing
             until deletion is possible.
-          </p>
+          </P>
 
-          <h2>8. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
-          <p>
+          <H2>8. HOW DO WE KEEP YOUR INFORMATION SAFE?</H2>
+          <P>
             We have implemented appropriate technical and organizational
             security measures designed to protect the security of any personal
             information we process. However, please also remember that we cannot
@@ -303,10 +331,10 @@ function Privacy() {
             do our best to protect your personal information, transmission of
             personal information to and from our Apps is at your own risk. You
             should only access the services within a secure environment.
-          </p>
+          </P>
 
-          <h2>9. DO WE COLLECT INFORMATION FROM MINORS?</h2>
-          <p>
+          <H2>9. DO WE COLLECT INFORMATION FROM MINORS?</H2>
+          <P>
             We do not knowingly solicit data from or market to children under 18
             years of age. By using the Apps, you represent that you are at least
             18 or that you are the parent or guardian of such a minor and
@@ -316,10 +344,10 @@ function Privacy() {
             measures to promptly delete such data from our records. If you
             become aware of any data we have collected from children under age
             18, please contact us at support@wahd.app.
-          </p>
+          </P>
 
-          <h2>10. WHAT ARE YOUR PRIVACY RIGHTS?</h2>
-          <p>
+          <H2>10. WHAT ARE YOUR PRIVACY RIGHTS?</H2>
+          <P>
             In some regions (like the European Economic Area), you have certain
             rights under applicable data protection laws. These may include the
             right (i) to request access and obtain a copy of your personal
@@ -355,10 +383,10 @@ function Privacy() {
             <br />
             If you have questions or comments about your privacy rights, you may
             email us at support@wahd.app.
-          </p>
+          </P>
 
-          <p>Account Information</p>
-          <p>
+          <P>Account Information</P>
+          <P>
             If you would at any time like to review or change the information in
             your account or terminate your account, you can:
             <br />
@@ -374,10 +402,10 @@ function Privacy() {
             However, some information may be retained in our files to prevent
             fraud, troubleshoot problems, assist with any investigations,
             enforce our Terms of Use and/or comply with legal requirements.
-          </p>
+          </P>
 
-          <h2>11. DATA BREACH</h2>
-          <p>
+          <H2>11. DATA BREACH</H2>
+          <P>
             A privacy breach occurs when there is unauthorized access to or
             collection, use, disclosure or disposal of personal information. You
             will be notified about data breaches when Wahdapp believes you are
@@ -390,10 +418,10 @@ function Privacy() {
             Supervisory Authority not later than 72 hours after having become
             aware of it, unless the personal data breach is unlikely to result
             in a risk to the rights and freedoms of natural persons.
-          </p>
+          </P>
 
-          <h2>12. CONTROLS FOR DO-NOT-TRACK FEATURES</h2>
-          <p>
+          <H2>12. CONTROLS FOR DO-NOT-TRACK FEATURES</H2>
+          <P>
             Most web browsers and some mobile operating systems and mobile
             applications include a Do-Not-Track (“DNT”) feature or setting you
             can activate to signal your privacy preference not to have data
@@ -405,10 +433,10 @@ function Privacy() {
             online tracking is adopted that we must follow in the future, we
             will inform you about that practice in a revised version of this
             privacy policy.
-          </p>
+          </P>
 
-          <h2>13. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</h2>
-          <p>
+          <H2>13. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</H2>
+          <P>
             California Civil Code Section 1798.83, also known as the “Shine The
             Light” law, permits our users who are California residents to
             request and obtain from us, once a year and free of charge,
@@ -430,10 +458,10 @@ function Privacy() {
             will make sure the data is not publicly displayed on the Apps, but
             please be aware that the data may not be completely or
             comprehensively removed from our systems.
-          </p>
+          </P>
 
-          <h2>14. DO WE MAKE UPDATES TO THIS POLICY?</h2>
-          <p>
+          <H2>14. DO WE MAKE UPDATES TO THIS POLICY?</H2>
+          <P>
             We may update this privacy policy from time to time. The updated
             version will be indicated by an updated “Revised” date and the
             updated version will be effective as soon as it is accessible. If we
@@ -442,27 +470,27 @@ function Privacy() {
             directly sending you a notification. We encourage you to review this
             privacy policy frequently to be informed of how we are protecting
             your information.
-          </p>
+          </P>
 
-          <h2>15. HOW CAN YOU CONTACT US ABOUT THIS POLICY?</h2>
-          <p>
+          <H2>15. HOW CAN YOU CONTACT US ABOUT THIS POLICY?</H2>
+          <P>
             If you have questions or comments about this policy, you may email
             us at support@wahd.app.
-          </p>
+          </P>
 
-          <h2>
+          <H2>
             HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
-          </h2>
-          <p>
+          </H2>
+          <P>
             Based on the laws of some countries, you may have the right to
             request access to the personal information we collect from you,
             change that information, or delete it in some circumstances. To
             request to review, update, or delete your personal information,
             please submit a request form by clicking here. We will respond to
             your request within 30 days.
-          </p>
-        </div>
-      </div>
+          </P>
+        </Box>
+      </Box>
 
       <Download />
 
