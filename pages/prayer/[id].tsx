@@ -48,7 +48,6 @@ const UserItem = ({ user }: { user: Partial<User> }) => (
 
 export default function PrayerDetails(props: Prayer) {
   const {
-    id,
     prayer,
     location,
     inviter,
@@ -98,7 +97,16 @@ export default function PrayerDetails(props: Prayer) {
   });
 
   return (
-    <Flex minHeight="100vh" width="100%">
+    <Flex
+      minHeight="100vh"
+      width="100%"
+      flexDirection={[
+        'column-reverse',
+        'column-reverse',
+        'column-reverse',
+        'row',
+      ]}
+    >
       <Meta
         title={`Wahdapp | ${prayerHeader}`}
         meta={[
@@ -119,7 +127,12 @@ export default function PrayerDetails(props: Prayer) {
         link={meta[lang].link}
         image={`/assets/prayer/${getPrayerBG(prayer)}.jpg`}
       />
-      <Flex width="50%" px={45} py={60} flexDirection="column">
+      <Flex
+        width={['100%', '100%', '100%', '50%']}
+        px={[20, 35, 40, 45]}
+        py={[45, 50, 55, 60]}
+        flexDirection="column"
+      >
         <Flex
           as="section"
           flexDirection="column"
@@ -140,7 +153,7 @@ export default function PrayerDetails(props: Prayer) {
               Wahdapp
             </Label>
           </Link>
-          <H1 color="#545454" mb={8}>
+          <H1 fontSize={[30, 30, 40, 54]} color="#545454" mb={8}>
             {t('prayer:HEADER', { prayer: PRAYERS[props.prayer] })}
           </H1>
           <P color="#625657" fontSize={16}>
@@ -202,7 +215,10 @@ export default function PrayerDetails(props: Prayer) {
           </Flex>
         ) : null}
       </Flex>
-      <Box width="50%">
+      <Box
+        width={['100%', '100%', '100%', '50%']}
+        height={['30vh', '30vh', '30vh', 'unset']}
+      >
         <iframe
           src={`https://maps.google.com/maps?q=${props.location.lat}, ${props.location.lng}&z=15&output=embed`}
           frameBorder="0"
