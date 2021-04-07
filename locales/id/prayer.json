@@ -1,0 +1,14 @@
+{
+  "HEADER": "Sholat {{prayer}}",
+  "JOIN": "Bergabung",
+  "JOINED": "Telah bergabung",
+  "CANCEL": "Batalkan",
+  "ENDED": "Berakhir",
+  "DESCRIPTION": "Deskripsi",
+  "VIEW_TRANSLATION": "Lihat Terjemahan",
+  "VIEW_ORIGINAL": "Lihat yang Asli",
+  "ORGANIZER": "Penyelenggara",
+  "PARTICIPANTS": "Peserta",
+  "GUESTS": "Tamu",
+  "NEW_PRAYER": "{{user}} mungundang anda untuk bergabung ke sholat {{prayer}}!"
+}

@@ -12,5 +12,18 @@
     "PRIVACY_POLICY": "Gizlilik politikası",
     "LANGUAGES": "Diller",
     "SOURCE_CODE": "Kaynak Kodu"
+  },
+  "PRAYERS": {
+    "fajr": "Sabah",
+    "dhuhr": "Öğle",
+    "asr": "İkindi",
+    "maghrib": "Akşam",
+    "isha": "Yatsı",
+    "jumuah": "Cuma",
+    "janazah": "Cenaze"
+  },
+  "DISTANCE": {
+    "KM": "km",
+    "M": "m"
   }
 }

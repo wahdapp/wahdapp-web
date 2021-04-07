@@ -1,6 +1,14 @@
 import Head from 'next/head';
 
-const Meta = ({ title, locale, meta, link }) => {
+type Props = {
+  title?: string;
+  locale?: string;
+  meta?: { property: string; content: string }[];
+  link?: { rel: string; href: string; hrefLang?: string }[];
+  image?: string;
+};
+
+const Meta = ({ title, locale, meta, link, image }: Props) => {
   return (
     <Head>
       <html lang={locale} />
@@ -12,7 +20,7 @@ const Meta = ({ title, locale, meta, link }) => {
       {link.map((info, i) => (
         <meta key={i} {...info} />
       ))}
-      <meta property="og:image" content="/assets/banner.jpg" />
+      <meta property="og:image" content={image ?? '/assets/banner.jpg'} />
     </Head>
   );
 };

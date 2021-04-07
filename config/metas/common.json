@@ -1,0 +1,194 @@
+{
+  "en": {
+    "locale": "en",
+    "meta": [
+      {
+        "property": "og:locale",
+        "content": "en_US"
+      },
+      {
+        "property": "og:url",
+        "content": "https://wahd.app"
+      }
+    ],
+    "link": [
+      {
+        "rel": "canonical",
+        "href": "https://wahd.app"
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wahd.app",
+        "hrefLang": "x-default"
+      }
+    ]
+  },
+  "tw": {
+    "locale": "zh_TW",
+    "meta": [
+      {
+        "property": "og:locale",
+        "content": "zh-Hant"
+      },
+      {
+        "property": "og:url",
+        "content": "https://wahd.app/tw"
+      }
+    ],
+    "link": [
+      {
+        "rel": "canonical",
+        "href": "https://wahd.app/tw"
+      },
+      {
+        "rel": "alternate",
+        "href": " https://wahd.app/tw",
+        "hrefLang": "zh-Hant"
+      }
+    ]
+  },
+  "cn": {
+    "locale": "zh_CN",
+    "meta": [
+      {
+        "property": "og:locale",
+        "content": "zh-Hans"
+      },
+      {
+        "property": "og:url",
+        "content": "https://wahd.app/cn"
+      }
+    ],
+    "link": [
+      {
+        "rel": "canonical",
+        "href": "https://wahd.app/cn"
+      },
+      {
+        "rel": "alternate",
+        "href": " https://wahd.app/cn",
+        "hrefLang": "zh-Hans"
+      }
+    ]
+  },
+  "id": {
+    "locale": "id",
+    "meta": [
+      {
+        "property": "og:locale",
+        "content": "id_ID"
+      },
+      {
+        "property": "og:url",
+        "content": "https://wahd.app/id"
+      }
+    ],
+    "link": [
+      {
+        "rel": "canonical",
+        "href": "https://wahd.app/id"
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wahd.app/id",
+        "hrefLang": "x-default"
+      }
+    ]
+  },
+  "fr": {
+    "locale": "fr",
+    "meta": [
+      {
+        "property": "og:locale",
+        "content": "fr_FR"
+      },
+      {
+        "property": "og:url",
+        "content": "https://wahd.app/fr"
+      }
+    ],
+    "link": [
+      {
+        "rel": "canonical",
+        "href": "https://wahd.app/fr"
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wahd.app/fr",
+        "hrefLang": "x-default"
+      }
+    ]
+  },
+  "tr": {
+    "locale": "tr",
+    "meta": [
+      {
+        "property": "og:locale",
+        "content": "tr_TR"
+      },
+      {
+        "property": "og:url",
+        "content": "https://wahd.app"
+      }
+    ],
+    "link": [
+      {
+        "rel": "canonical",
+        "href": "https://wahd.app/fr"
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wahd.app/fr",
+        "hrefLang": "x-default"
+      }
+    ]
+  },
+  "ar": {
+    "locale": "ar",
+    "meta": [
+      {
+        "property": "og:locale",
+        "content": "ar_AR"
+      },
+      {
+        "property": "og:url",
+        "content": "https://wahd.app/ar"
+      }
+    ],
+    "link": [
+      {
+        "rel": "canonical",
+        "href": "https://wahd.app/ar"
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wahd.app/ar",
+        "hrefLang": "x-default"
+      }
+    ]
+  },
+  "ru": {
+    "locale": "ru",
+    "meta": [
+      {
+        "property": "og:locale",
+        "content": "ru_RU"
+      },
+      {
+        "property": "og:url",
+        "content": "https://wahd.app/ru"
+      }
+    ],
+    "link": [
+      {
+        "rel": "canonical",
+        "href": "https://wahd.app/ru"
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wahd.app/ru",
+        "hrefLang": "x-default"
+      }
+    ]
+  }
+}

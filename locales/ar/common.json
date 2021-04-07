@@ -12,5 +12,18 @@
     "PRIVACY_POLICY": "سياسة الخصوصية",
     "LANGUAGES": "اللغات",
     "SOURCE_CODE": "مصدر الرمز"
+  },
+  "PRAYERS": {
+    "fajr": "الفجر",
+    "dhuhr": "الظهر",
+    "asr": "العصر",
+    "maghrib": "المغرب",
+    "isha": "العشاء",
+    "jumuah": "الجمعة",
+    "janazah": "الجنازة"
+  },
+  "DISTANCE": {
+    "KM": "كم",
+    "M": "م"
   }
 }

@@ -1,0 +1,14 @@
+{
+  "HEADER": "{{prayer}} Молитва",
+  "JOIN": "Присоединиться",
+  "JOINED": "Присоединился",
+  "CANCEL": "Отменить",
+  "ENDED": "Завершено",
+  "DESCRIPTION": "Описание",
+  "VIEW_TRANSLATION": "Показать перевод",
+  "VIEW_ORIGINAL": "Показать оригинал",
+  "ORGANIZER": "Организатор",
+  "PARTICIPANTS": "Участники",
+  "GUESTS": "Гости",
+  "NEW_PRAYER": "{{user}} приглашает вас присоединиться к {{prayer}} молитве!"
+}

@@ -4,6 +4,7 @@
   "pages": {
     "*": ["common"],
     "/": ["landing"],
-    "/faq": ["faq"]
+    "/faq": ["faq"],
+    "/prayer/[id]": ["prayer"]
   }
 }

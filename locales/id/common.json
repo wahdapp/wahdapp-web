@@ -12,5 +12,18 @@
     "PRIVACY_POLICY": "Kebijakan Pribadi",
     "LANGUAGES": "BAHASA",
     "SOURCE_CODE": "Sumber Kode"
+  },
+  "PRAYERS": {
+    "fajr": "Subuh",
+    "dhuhr": "Dhuhur",
+    "asr": "Ashar",
+    "maghrib": "Maghrib",
+    "isha": "Isha",
+    "jumuah": "Jumatan",
+    "janazah": "Jenazah"
+  },
+  "DISTANCE": {
+    "KM": "km",
+    "M": "m"
   }
 }

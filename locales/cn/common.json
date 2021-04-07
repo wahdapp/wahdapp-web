@@ -12,5 +12,18 @@
     "PRIVACY_POLICY": "隐私政策",
     "LANGUAGES": "语言",
     "SOURCE_CODE": "原始码"
+  },
+  "PRAYERS": {
+    "fajr": "晨礼",
+    "dhuhr": "晌礼",
+    "asr": "晡礼",
+    "maghrib": "昏礼",
+    "isha": "宵礼",
+    "jumuah": "聚礼",
+    "janazah": "葬礼"
+  },
+  "DISTANCE": {
+    "KM": "公里",
+    "M": "公尺"
   }
 }

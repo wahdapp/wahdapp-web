@@ -1,0 +1,14 @@
+{
+  "HEADER": "{{prayer}} صلاة",
+  "JOIN": "انضم",
+  "JOINED": "انضم",
+  "CANCEL": "إلغاء",
+  "ENDED": "منتهية",
+  "DESCRIPTION": "وصف",
+  "VIEW_TRANSLATION": "عرض الترجمة",
+  "VIEW_ORIGINAL": "عرض الأصل",
+  "ORGANIZER": "المنظم",
+  "PARTICIPANTS": "المشاركين",
+  "GUESTS": "الزوار",
+  "NEW_PRAYER": "يدعوك {{user}} للانضمام إلى {{prayer}}!"
+}

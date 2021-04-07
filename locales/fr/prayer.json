@@ -1,0 +1,14 @@
+{
+  "HEADER": "{{prayer}} Prière",
+  "JOIN": "Rejoindre",
+  "JOINED": "Jointe",
+  "CANCEL": "Annuler",
+  "ENDED": "Terminé",
+  "DESCRIPTION": "Description",
+  "VIEW_TRANSLATION": "Voir la traduction",
+  "VIEW_ORIGINAL": "Voir l'original",
+  "ORGANIZER": "Organizer",
+  "PARTICIPANTS": "Participants",
+  "GUESTS": "Invités",
+  "NEW_PRAYER": "{{user}} vous a invité à rejoindre la prière de {{prayer}}!"
+}

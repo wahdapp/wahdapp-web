@@ -1,0 +1,14 @@
+{
+  "HEADER": "{{prayer}}",
+  "JOIN": "加入",
+  "JOINED": "已加入",
+  "CANCEL": "取消",
+  "ENDED": "已結束",
+  "DESCRIPTION": "說明",
+  "VIEW_TRANSLATION": "查看翻譯",
+  "VIEW_ORIGINAL": "查看原文",
+  "ORGANIZER": "發起人",
+  "PARTICIPANTS": "參加者",
+  "GUESTS": "來賓",
+  "NEW_PRAYER": "{{user}}邀請您一起參加{{prayer}}！"
+}

@@ -23,7 +23,7 @@ function Download() {
   const { t } = useTranslation();
 
   return (
-    <Box as="section" pt={45} pb={50} background="#f5f8fd">
+    <Box as="section" id="download" pt={45} pb={50} background="#f5f8fd">
       <Element name="download" />
       <Zoom duration={800} delay={500}>
         <H2

@@ -12,5 +12,18 @@
     "PRIVACY_POLICY": "Politique de confidentialité",
     "LANGUAGES": "LANGUES",
     "SOURCE_CODE": "Code Source"
+  },
+  "PRAYERS": {
+    "fajr": "Fajr",
+    "dhuhr": "Dhuhr",
+    "asr": "Asr",
+    "maghrib": "Maghrib",
+    "isha": "Isha",
+    "jumuah": "Jumuah",
+    "janazah": "Janazah"
+  },
+  "DISTANCE": {
+    "KM": "km",
+    "M": "m"
   }
 }

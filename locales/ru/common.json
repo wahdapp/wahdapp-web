@@ -12,5 +12,18 @@
     "PRIVACY_POLICY": "Политика конфиденциальности",
     "LANGUAGES": "ЯЗЫКИ",
     "SOURCE_CODE": "Исходный код"
+  },
+  "PRAYERS": {
+    "fajr": "Фаджр",
+    "dhuhr": "Зухр",
+    "asr": "Аср",
+    "maghrib": "Магриб",
+    "isha": "Иша",
+    "jumuah": "Джума",
+    "janazah": "Джаназа"
+  },
+  "DISTANCE": {
+    "KM": "км",
+    "M": "м"
   }
 }
