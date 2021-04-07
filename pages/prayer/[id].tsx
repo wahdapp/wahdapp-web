@@ -98,7 +98,9 @@ export default function PrayerDetails(props: Prayer) {
 
   return (
     <Flex
-      minHeight="100vh"
+      minHeight={['100vh', '100vh', '100vh', 'unset']}
+      height={['100%', '100%', '100%', '100vh']}
+      overflow={['unset', 'unset', 'unset', 'hidden']}
       width="100%"
       flexDirection={[
         'column-reverse',
@@ -129,6 +131,7 @@ export default function PrayerDetails(props: Prayer) {
       />
       <Flex
         width={['100%', '100%', '100%', '50%']}
+        overflow="auto"
         px={[20, 35, 40, 45]}
         py={[45, 50, 55, 60]}
         flexDirection="column"
