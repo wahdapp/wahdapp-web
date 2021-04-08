@@ -93,7 +93,7 @@ export default function PrayerDetails(props: Prayer) {
   });
   const metaDesc = t('prayer:NEW_PRAYER', {
     user: inviter.full_name,
-    prayer: prayerHeader,
+    prayer: PRAYERS[props.prayer],
   });
 
   return (
