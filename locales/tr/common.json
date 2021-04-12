@@ -20,7 +20,8 @@
     "maghrib": "Akşam",
     "isha": "Yatsı",
     "jumuah": "Cuma",
-    "janazah": "Cenaze"
+    "janazah": "Cenaze",
+    "taraweeh": "Teravih"
   },
   "DISTANCE": {
     "KM": "km",
