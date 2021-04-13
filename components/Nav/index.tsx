@@ -164,7 +164,8 @@ function Navigation() {
           <Flex as="ul" justifyContent="space-between">
             <Li>
               <ListItem
-                href="https://www.paypal.me/abdullahcheng"
+                color="#6DC7B0"
+                href="https://www.launchgood.com/campaign/creative_application_to_invite_people_to_pray_together#!/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -222,7 +223,7 @@ function Navigation() {
           fontWeight="bold"
           textAlign="center"
           mb={20}
-          href="https://www.paypal.me/abdullahcheng"
+          href="https://www.launchgood.com/campaign/creative_application_to_invite_people_to_pray_together#!/"
           target="_blank"
           rel="noopener noreferrer"
         >
