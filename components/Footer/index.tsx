@@ -94,7 +94,7 @@ const Footer = () => {
               fontWeight="bold"
               letterSpacing={1.2}
               color="#f6f8f9"
-              href="https://www.launchgood.com/campaign/creative_application_to_invite_people_to_pray_together#!/"
+              href="https://www.paypal.me/abdullahcheng"
               target="_blank"
               rel="noopener noreferrer"
             >
