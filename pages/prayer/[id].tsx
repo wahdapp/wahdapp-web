@@ -56,6 +56,7 @@ export default function PrayerDetails(props: Prayer) {
     guests_female,
     schedule_time,
     description,
+    place_name,
   } = props;
   const { t, lang } = useTranslation();
   const PRAYERS = t('common:PRAYERS', {}, { returnObjects: true });
@@ -83,7 +84,7 @@ export default function PrayerDetails(props: Prayer) {
         default:
           module = lang;
       }
-      await import(`dayjs/locale/${module}`);
+      await import(`dayjs/locale/${module}.js`);
       dayjs.locale(module);
     })();
   }, []);
@@ -166,19 +167,32 @@ export default function PrayerDetails(props: Prayer) {
               ` • ${formatDistance(calculateDistance(location, position), t)}`}
           </P>
         </Flex>
-        <Flex as="section" flexDirection="column" pb={40}>
-          <Label mb={10} color="#7C7C7C" fontWeight="bold" fontSize={18}>
-            {t('prayer:DESCRIPTION')}
-          </Label>
-          <P
-            color="#7C7C7C"
-            fontSize={16}
-            lineHeight={1.5}
-            style={{ whiteSpace: 'pre-line' }}
-          >
-            {description}
-          </P>
-        </Flex>
+
+        {place_name?.length ? (
+          <Flex as="section" flexDirection="column" pb={40}>
+            <Label mb={10} color="#7C7C7C" fontWeight="bold" fontSize={18}>
+              {t('prayer:PLACE')}
+            </Label>
+            <P color="#7C7C7C" fontSize={16} lineHeight={1.5}>
+              {place_name}
+            </P>
+          </Flex>
+        ) : null}
+        {description?.length ? (
+          <Flex as="section" flexDirection="column" pb={40}>
+            <Label mb={10} color="#7C7C7C" fontWeight="bold" fontSize={18}>
+              {t('prayer:DESCRIPTION')}
+            </Label>
+            <P
+              color="#7C7C7C"
+              fontSize={16}
+              lineHeight={1.5}
+              style={{ whiteSpace: 'pre-line' }}
+            >
+              {description}
+            </P>
+          </Flex>
+        ) : null}
         <Flex as="section" flexDirection="column" pb={40}>
           <Label mb={10} color="#7C7C7C" fontWeight="bold" fontSize={18}>
             {t('prayer:ORGANIZER')}
